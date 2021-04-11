@@ -30,9 +30,9 @@ public class Match {
 
     public boolean matches(String text, String regex) {
 
-        var someThing = new Handler(text, regex);
+        var handler = new Handler(text, regex);
 
-        var task = new FutureTask<>(someThing);
+        var task = new FutureTask<>(handler);
 
         var thread = new Thread(task);
 
